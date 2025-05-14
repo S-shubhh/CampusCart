@@ -1,0 +1,144 @@
+.design {
+  width: 60%;
+  height: 100vh;
+  background-color: rgb(137, 255, 255);
+}
+
+#loginLogo {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes reveal {
+  from {
+    transform: translateY(8rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#loginBuyNSell {
+  height: 8.5rem;
+  font-family: "'Playfair Display', serif";
+  overflow: hidden;
+  font-size: 6.5rem;
+  div {
+    transform: translateY(8rem);
+    animation: reveal 1s 0.3s forwards;
+  }
+}
+
+#loginBuy{
+  font-family: "'playfair Display', serif"; ;
+font-size: larger;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  animation: reveal 1s 0.3s forwards;
+  transform: translateY(8rem);
+  animation: reveal 1s 0.3s forwards;
+  @media only screen and (max-width: 850px) {
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+}
+
+#loginMotto {
+  height: 2rem;
+  font-size: 1.5rem;
+  overflow: hidden;
+  div {
+    transform: translateY(3rem);
+    animation: reveal 1s 0.4s forwards;
+  }
+}
+#scenery {
+  height: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes slideUp {
+  from {
+    bottom: -40vh;
+  }
+  to {
+    bottom: 0vh;
+  }
+}
+#sun {
+  position: absolute;
+  height: 30vh;
+  width: 30vh;
+  bottom: -40vh;
+  left: 2vw;
+  z-index: 1;
+  animation: slideUp 1.4s 0s forwards;
+}
+#hill1 {
+  position: absolute;
+  width: 100%;
+  bottom: -40vh;
+  height: auto;
+  z-index: 3;
+  animation: slideUp 0.9s 0s forwards;
+}
+
+#hill2 {
+  position: absolute;
+  width: 100%;
+  bottom: -40vh;
+  height: auto;
+  z-index: 4;
+  animation: slideUp 0.8s 0s forwards;
+}
+@keyframes cloudReveal {
+  from {
+    bottom: -40vh;
+  }
+  to {
+    bottom: 30vh;
+  }
+}
+
+@keyframes cloud {
+  from {
+    left: -28%;
+  }
+  to {
+    left: 60vw;
+  }
+}
+
+#cloud {
+  position: absolute;
+  width: 25%;
+  transition: 1s ease-in-out;
+  height: auto;
+  z-index: 2;
+  animation: cloud 50s infinite linear;
+}
+
+@media only screen and (max-width: 850px) {
+  .design {
+    width: 100vw;
+  }
+  #loginBuyNSell {
+    font-size: 3.5rem;
+  }
+
+  #loginLogo {
+    opacity: 0.5;
+  }
+  #sun,
+  #cloud,
+  #hill2,
+  #hill1 {
+    display: none;
+  }
+}

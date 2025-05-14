@@ -1,0 +1,78 @@
+#sellPage {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 10vh 20vw;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #89ffff, white);
+}
+
+#sellBox {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60vw;
+  border-radius: 30px;
+  padding: 10vh 10vw;
+  background-color: rgba(255, 255, 255, 0.903);
+  input {
+    font-size: 1.3rem;
+    padding: 3px 10px;
+    background-color: rgba(245, 222, 179, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.385);
+  }
+  input:focus {
+    outline: none;
+    border-bottom: 1px solid black;
+  }
+  button {
+    width: 50%;
+    height: 2.5rem;
+    background-color: green;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 10px;
+  }
+}
+.sellTitle {
+  font-size: 3rem;
+}
+.checkboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.sellinput {
+  span {
+    width: 10vw;
+    font-size: 1.1rem;
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  #sellPage {
+    padding: 10vh 5vw;
+  }
+  #sellBox {
+    width: 90vw;
+    padding: 10vh 5vw;
+    input {
+      font-size: 1rem;
+    }
+  }
+  .sellinput {
+    span {
+      width: 50vw;
+      font-size: 1rem;
+    }
+  }
+  .checkboxes {
+    width: 100%;
+  }
+}

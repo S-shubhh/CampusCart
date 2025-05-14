@@ -1,0 +1,338 @@
+#navbar {
+  height: 8vh;
+  width: 100vw;
+  padding: 0 10vw;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  z-index: 100;
+  justify-content: space-between;
+  grid-template-rows: 8vh;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  background-color: #89ffff;
+}
+
+#navLogo {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.loadingIc {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navButton {
+  cursor: pointer;
+  // border-radius: 5px;
+  color: #333;
+  font-weight: 500;
+  
+}
+
+.loadingText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 0.5rem;
+}
+.noNotificationContainer {
+  position: fixed;
+  top: 10vh;
+  right: 5vw;
+  width: 35vw;
+  border-radius: 5px;
+  min-height: 14vh;
+  height: auto;
+  background-color: rgb(239, 248, 255);
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notificationContainer {
+  position: fixed;
+  top: 10vh;
+  right: 5vw;
+  width: 35vw;
+
+  min-height: 25vh;
+  height: auto;
+  background-color: rgb(239, 248, 255);
+  overflow-x: hidden;
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+}
+.bgNotification {
+  position: fixed;
+  background-color: rgba(128, 128, 128, 0.3);
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.crossNotifi {
+  border-top: 15px solid white;
+  border-bottom: 15px solid white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 167, 167);
+}
+.notifEl {
+  display: flex;
+  flex-direction: row;
+  border: 15px solid white;
+  border-right: none;
+  align-items: center;
+  gap: 1rem;
+  p {
+    width: 50%;
+  }
+  img {
+    height: 20vh;
+    width: 20vh;
+  }
+}
+#searchBox {
+  height: 2.2rem;
+  width: 30vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  input {
+    padding: 0 20px;
+    height: inherit;
+    width: inherit;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  input:focus {
+    outline: none;
+  }
+  span {
+    width: 4rem;
+    height: inherit;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    img {
+      height: 60%;
+      width: auto;
+    }
+  }
+
+  span:hover {
+    background-color: rgb(171, 244, 62);
+  }
+}
+
+#navLinks {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.homePage {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 13vh 10vw;
+}
+
+#categories {
+  height: auto;
+  width: 60vw;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bannerImg {
+  height: 7.5vw;
+  width: 7.5vw;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    padding: 2vh;
+    height: inherit;
+    cursor: pointer;
+    width: inherit;
+  }
+}
+.bannerImg:hover {
+  img {
+    background-color: pink;
+  }
+}
+
+#productTitle {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 10px 0;
+  span {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+#productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+  #navbar {
+    padding: 0 15vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #navbar {
+    padding: 0 5vw;
+  }
+  #navbar:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #89ffff;
+    z-index: -1;
+    left: 0;
+    top: 6vh;
+  }
+  #navLogo {
+    font-size: 1.1rem;
+  }
+  #navLinks {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    #registerNav {
+      border-left: 0.1rem solid black;
+      padding-left: 0.5rem;
+    }
+  }
+  .homePage {
+    min-height: 100vh;
+    width: 100%;
+    padding: 17vh 5vw;
+    background-color: white;
+  }
+
+  #searchBox {
+    height: 2.5rem;
+    width: 90vw;
+    position: absolute;
+    top: 7vh;
+    input {
+      padding: 0 15px;
+    }
+  }
+  #categories {
+    width: 90vw;
+  }
+
+  .bannerImg {
+    height: 14.25vw;
+    width: 14.25vw;
+    img {
+      padding: 2vw;
+    }
+  }
+  #productTitle {
+    span {
+      font-size: 1rem;
+    }
+  }
+  .notificationContainer {
+    position: fixed;
+    top: 13vh;
+    right: 5vw;
+    width: 90vw;
+    min-height: 25vh;
+    height: auto;
+    background-color: rgb(239, 248, 255);
+    overflow-x: hidden;
+    overflow: scroll;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+  }
+  .noNotificationContainer {
+    position: fixed;
+    top: 13vh;
+    right: 5vw;
+    width: 90vw;
+    border-radius: 5px;
+    min-height: 14vh;
+    height: auto;
+    background-color: rgb(239, 248, 255);
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #noNotification {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    z-index: 160;
+  }
+  .bgNotification {
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.3);
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    left: 0;
+  }
+  .crossNotifi {
+    border-top: 15px solid white;
+    border-bottom: 15px solid white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(255, 167, 167);
+  }
+  .notifEl {
+    display: flex;
+    flex-direction: row;
+    border: 15px solid white;
+    border-right: none;
+    align-items: center;
+    gap: 1rem;
+    p {
+      width: 50%;
+    }
+    img {
+      height: 15vh;
+      width: 15vh;
+    }
+  }
+}

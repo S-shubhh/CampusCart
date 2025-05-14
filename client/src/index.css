@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Biryani:wght@200;300;400&family=Epilogue:wght@300;400;500;600&family=Henny+Penny&family=Krona+One&family=Lexend:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;800&family=Raleway:wght@300;400;600;800&family=Roboto:wght@500&family=Sora:wght@200;300;400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Raleway", sans-serif;
+  /* user-select: none; */
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+.w-screen {
+  width: 100vw;
+}
+.text-center {
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}

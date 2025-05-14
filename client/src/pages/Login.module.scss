@@ -1,0 +1,157 @@
+.login {
+  display: flex;
+  flex-direction: row;
+}
+#loginFormContainer {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  p {
+    width: 80%;
+    font-weight: 600;
+    font-size: 3rem;
+    padding: 5vh 10%;
+  }
+}
+#loginForm {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  input {
+    height: 7vh;
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(121, 121, 121);
+    margin-bottom: 10px;
+  }
+  input:focus {
+    outline: none;
+    border-bottom: 0.1rem solid rgb(0, 0, 0);
+  }
+  #registerHere {
+    padding: 20px 10px;
+    color: rgb(49, 49, 49);
+  }
+  #checkboxes {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    input {
+      padding: 0;
+      margin: 0 10px;
+    }
+    label {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: rgb(49, 49, 49);
+    }
+  }
+  button {
+    height: 8vh;
+    width: 7rem;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 1.3rem;
+    background-color: greenyellow;
+    border-radius: 30px;
+  }
+
+  button:hover {
+    background-color: rgb(165, 242, 50);
+  }
+}
+
+#emailSent {
+  height: inherit;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  img {
+    width: 30%;
+    margin-top: 16vh;
+  }
+  #verifymail {
+    font-size: 2.2rem;
+  }
+  div {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #loginFormContainer {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.946);
+    border-radius: 20px;
+    width: 80vw;
+    max-height: 85vh;
+    top: 7.5vh;
+    left: 10vw;
+  }
+  #emailSent {
+    img {
+      width: 40%;
+      margin-top: 25vh;
+    }
+    #verifymail {
+      font-size: 1.7rem;
+    }
+    div {
+      font-size: 0.8rem;
+      margin: 10px 0;
+    }
+  }
+  #loginForm {
+    input {
+      height: 6vh;
+      font-size: 0.9rem;
+      padding: 0 6px;
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom: 1px solid rgb(121, 121, 121);
+      margin-bottom: 7px;
+    }
+    input:focus {
+      outline: none;
+      border-bottom: 0.1rem solid rgb(0, 0, 0);
+    }
+    #registerHere {
+      padding: 15px 6px 8px 6px;
+      color: rgb(49, 49, 49);
+    }
+    #checkboxes {
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      justify-content: space-between;
+      input {
+        padding: 0;
+        margin: 0 8px;
+      }
+      label {
+        display: flex;
+        font-size: 0.8rem;
+        flex-direction: row;
+        align-items: center;
+        color: rgb(49, 49, 49);
+      }
+    }
+    button {
+      height: 5vh;
+      width: 6rem;
+      font-size: 1.1rem;
+    }
+  }
+}

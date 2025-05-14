@@ -1,0 +1,80 @@
+.chatPopup {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    width: 300px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  .header {
+    background: #0078ff;
+    color: white;
+    padding: 8px 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .body {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f9f9f9;
+    flex: 1;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .mine {
+    background: #dcf8c6;
+    padding: 8px;
+    border-radius: 12px;
+    margin-left: auto;
+    max-width: 70%;
+  }
+  
+  .theirs {
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 12px;
+    margin-right: auto;
+    max-width: 70%;
+  }
+  
+  .input {
+    display: flex;
+    padding: 8px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+  }
+  
+  .input button {
+    background: #0078ff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+.messages { overflow-y: auto; max-height: 300px; padding: 1rem; }
+.sent { text-align: right; background: #dcf8c6; margin: 5px; padding: 8px; border-radius: 10px; }
+.received { text-align: left; background: #f1f0f0; margin: 5px; padding: 8px; border-radius: 10px; }
+.inputArea { display: flex; padding: 10px; }
+  

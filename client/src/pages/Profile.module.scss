@@ -1,0 +1,347 @@
+#profilePage {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 10vh 20vw;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #89ffff, white);
+}
+
+#profileTitle {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  span {
+    font-size: 3rem;
+  }
+  a {
+    font-size: 1rem;
+    text-decoration: underline;
+    color: rgb(85, 85, 85);
+  }
+}
+
+
+#logout {
+  position: fixed;
+  top: 35vh;
+  left: 30vw;
+  width: 40vw;
+  height: 30vh;
+  z-index: 10;
+  border-radius: 30px;
+  text-align: center;
+  background-color: aliceblue;
+  #logoutBTNS {
+    margin-top: 30px;
+  }
+  #logoutContext {
+    margin: 15px 0;
+  }
+  button {
+    height: 3rem;
+    width: 40%;
+    margin: 0 20px;
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  button:nth-child(1) {
+    background-color: gray;
+  }
+  button:nth-child(1):hover {
+    background-color: rgb(149, 149, 149);
+  }
+  button:nth-child(2) {
+    background-color: rgb(210, 40, 40);
+  }
+  button:nth-child(2):hover {
+    background-color: rgb(245, 46, 46);
+  }
+}
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+
+#logoutTitle {
+  margin: 10px 0;
+  font-size: 2rem;
+}
+#logoutblur {
+  position: fixed;
+  height: 100%;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(224, 224, 224, 0.899);
+  z-index: 5;
+}
+
+.profileAttribute {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  margin: 8px 0;
+  span:nth-child(1) {
+    width: 10vw;
+  }
+  input {
+    font-size: 1.3rem;
+    padding: 3px 10px;
+    background-color: rgba(245, 222, 179, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+  }
+  input:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+  }
+}
+
+
+#profileContainer {
+  min-height: 80vh;
+  width: 60vw;
+  border-radius: 30px;
+  padding: 10vh 10vw;
+  background-color: rgba(255, 255, 255, 0.903);
+}
+
+#profileBtns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 0;
+  button {
+    width: 30%;
+    margin-top: 30px;
+    height: 2.5rem;
+    font-size: 1.1rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  button:nth-child(1) {
+    background-color: green;
+  }
+
+  button:nth-child(1):hover {
+    background-color: rgb(0, 152, 0);
+  }
+  button:nth-child(2) {
+    background-color: rgb(221, 46, 46);
+  }
+  button:nth-child(2):hover {
+    background-color: rgb(248, 74, 74);
+  }
+  button:nth-child(3) {
+    background-color: rgb(135, 32, 32);
+  }
+  button:nth-child(3):hover {
+    background-color: rgb(177, 51, 51);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #profilePage {
+    padding: 10vh 5vw;
+  }
+  #profileTitle {
+    span {
+      font-size: 1.5rem;
+    }
+    a {
+      font-size: 0.9rem;
+    }
+  }
+  #profileContainer {
+    width: 90vw;
+    border-radius: 20px;
+    padding: 5vh 7vw;
+    background-color: rgba(255, 255, 255, 0.903);
+  }
+  .profileAttribute {
+    font-size: 1rem;
+    margin: 8px 0;
+    span:nth-child(1) {
+      width: 20vw;
+      font-weight: 500;
+    }
+    input {
+      font-size: 0.9rem;
+      padding: 3px 7px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0);
+    }
+    input:focus {
+      border-bottom: 1px solid black;
+    }
+  }
+  #profileBtns {
+    padding: 8px 0;
+    button {
+      height: 2.2rem;
+      font-size: 1rem;
+    }
+  }
+
+  #logout {
+    top: 35vh;
+    left: 5vw;
+    width: 90vw;
+    height: 20vh;
+
+    button {
+      height: 2.6rem;
+      width: 33%;
+      margin: 0 20px;
+      font-size: 1.1rem;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  #logoutTitle {
+    font-size: 1.5rem;
+  }
+  
+  
+}
+
+
+.myProductCard {
+  background-color: #d9ffff;
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.myProductCard img {
+  height: 15vh;
+  width: 20vh;
+  object-fit: cover;
+}
+
+.myProductInfo {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.myProductInfo h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.myProductInfo p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.myProductActions {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.myProductActions button {
+  padding: 6px 12px;
+  border: none;
+  background-color: #f28585;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.myProductActions button:hover {
+  background-color: #ff5f5f;
+}
+
+
+
+.myProductsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 20px 0;
+}
+
+.myProductItem {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.productLink {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.myProductInfo {
+  text-align: center;
+
+  p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+}
+
+.myProductName {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.myProductDelete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
