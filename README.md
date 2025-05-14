@@ -8,5 +8,5 @@ The purpose of this project is to build connectivity within the campus where stu
 
 #### Tools: ReactJS, NodeJS, MongoDB, JWT Web tokens, Mongoose
 
-https://github.com/Mano-08/buyNsell/assets/95289188/26ea58b1-2b09-48be-82bc-d34d038fe2cf
+
 
