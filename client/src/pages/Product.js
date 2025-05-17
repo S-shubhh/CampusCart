@@ -35,6 +35,7 @@ function Product() {
         setValid(true);
         const prodRes = await axios.post(`${process.env.REACT_APP_BASEURL}/api/prodData`, { id: ppid })
         const prodData = prodRes.data.details.data;
+        console.log(prodData)
         setIsMyProd(prodData.id.toString() === myid);
         setData(prodData);
         setSname(prodRes.data.details.name);
@@ -132,18 +133,19 @@ function Product() {
             <div className={styles.pricecon}>
               <div id={styles.pprice}>Rs.{data.pprice}/-</div>
             </div>
-            <div>
-              <button onClick={() => setShowChat(true)} className={styles.messageBtn}>
-                💬 Message Seller
-              </button>
-              {showChat && (
-                <ChatboxPopup
-                  receiverId={data.id}
-                  onClose={() => setShowChat(false)}
-                />
-              )}
-
-            </div>
+            {valid && !isMyProd && (
+              <div>
+                <button onClick={() => setShowChat(true)} className={styles.messageBtn}>
+                  💬 Message Seller
+                </button>
+                {showChat && (
+                  <ChatboxPopup
+                    receiverId={data.id}
+                    onClose={() => setShowChat(false)}
+                  />
+                )}
+              </div>
+            )}
           </div>
         </div>
       )}

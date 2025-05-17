@@ -11,6 +11,10 @@ const UserSchema = new Schema({
   password: { type: String, required: true },
   course: { type: String, required: true },
   verified: { type: Boolean, default: false },
+  idCardImage: {
+  type: String,
+  required: false,
+},
   role: { type: String, default: "user", required: true },
 });
 

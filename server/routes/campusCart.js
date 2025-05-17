@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
+const upload = require("../utils/upload");
 const campusCart = require("../controller/campusCartController");
 router.post("/send" , campusCart.sendText);
 router.post("/receive" , campusCart.receiveText);
 router.post("/login", campusCart.login);
-router.post("/register", campusCart.register);
+router.post("/register", upload.single("idCard"), campusCart.register);
 router.post("/", campusCart.token);
 router.delete("/", campusCart.delToken);
 router.post("/profile", campusCart.profile);
